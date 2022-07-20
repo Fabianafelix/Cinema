@@ -1,7 +1,7 @@
-lugares=int(input("\nCINEMA VIDA NOVA \n\nDigite o total de lugares disponíveis: "))
-posicao=()
+lugares = int(input("\nCINEMA VIDA NOVA \n\nDigite o total de lugares disponíveis: "))
+posicao = ()
 
-vetor = [posicao]*lugares
+vetor = [posicao] * lugares
 print (vetor)
 
 while True:
@@ -16,28 +16,14 @@ while True:
            print ("Assento número", assento, "reservado com sucesso.")
      
     else:
-        print("Esse assento não existe. Escolha um assento válido.")
+        print ("Esse assento não existe. Escolha um assento válido.")
     
-    print(vetor)
-
-    
+    print (vetor)
   
+    # Verificando se exitem assentos não marcados
 
+    if not (() in vetor):
+        print("\nTodos assentos estão ocupados.") 
 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
+        break
+    
